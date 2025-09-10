@@ -111,10 +111,15 @@ public class Main {
         System.out.print( "-----------------------------------\n");
 
         //Ejercicio 10:
-        int precioD = 100;
+        int precioD = 90;
+        boolean tieneDescuento = precioD>100;
 
-        if (precioD>100){
-            System.out.print ("El chico es mayor de edad");
+        if (tieneDescuento) {
+            double precioFinal = precioD * 0.90;
+            System.out.print("Hay descuento");
+        } else {
+            System.out.print ("No hay descuento");
+        };
 
 
 
