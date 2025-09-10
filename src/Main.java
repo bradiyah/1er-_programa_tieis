@@ -145,7 +145,7 @@ public class Main {
         int numB = 18;
         if (numA <= numB) {
             System.out.print("El de 12 años es menor que el de 18" + "\n");
-        };
+        }
 
         System.out.print("---\n");
 
@@ -157,9 +157,9 @@ public class Main {
             System.out.print("El chico ha aprobado");
         } else {
             System.out.print("El chaval ha suspendido/reprobado" + "\n");
-        };
+        }
 
-         System.out.print("------\n");
+        System.out.print("------\n");
 
          //Ej.5:
         double haceCalo = 28.5;
@@ -167,7 +167,7 @@ public class Main {
             System.out.print("Hace calo");
         } else {
             System.out.print("Clima agradable" +"\n");
-        };
+        }
         System.out.print("------\n");
 
         //Ej.6:
@@ -176,7 +176,7 @@ public class Main {
             System.out.print("El numero es igual o superior a 0");
         } else{
             System.out.print("El numero esta por debajo de 0" + "\n");
-        };
+        }
 
         System.out.print("----\n");
 
@@ -187,7 +187,7 @@ public class Main {
         if(numero1 > numeroDec & numero1 < numero3){
             System.out.print ("El 24 es mayor que 22.5 pero " +
                     "menor que 54" + "\n");
-        };
+        }
 
         System.out.print ("----\n");
 
@@ -200,7 +200,7 @@ public class Main {
         } else{
             double precioFinal2 = numSinDescuento * 0.10;
             System.out.print("Se lleva un 10% off" + "\n");
-        };
+        }
         System.out.print ("----\n");
 
         // Ej.9:
@@ -209,7 +209,7 @@ public class Main {
             System.out.print("Es festivo, yaaayyy!"); }
         else {
                 System.out.print ("Es laborable, toca trabajar :(" + "\n");
-            };
+            }
 
         System.out.print ("----\n");
 
@@ -217,13 +217,42 @@ public class Main {
         int numEntero = 10;
         if (numEntero >1 & numEntero <=10) {
             System.out.print("El numero esta dentro del rango" + "\n");
-        };
+        }
+
+        System.out.print("---\n");
+// Ejercicios_basicos_java_3:
+        // Ej.1:
+        int edad = 22;
+        boolean esDeAqui= true;
+
+        if ( esDeAqui & edad<18){
+            System.out.print("Es ciudadano pero no puede votar..todavia"); }
+            else {
+                System.out.print ("Ahora si puede votar" + "\n");
+            }
+
 
         System.out.print("---\n");
 
+    //Ej.2:
+        double notaFinal = 71.25;
+        boolean fueAClase = true;
 
+        if (notaFinal >= 60 && fueAClase) {
+            System.out.print("Aprobado");
+        } else {
+            System.out.print("No aprobado o no fue a clase" + "\n");
         }
 
-
-
     }
+
+    System.out.print("----\n");
+
+
+}
+
+
+
+
+
+
