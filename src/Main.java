@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -203,7 +205,7 @@ public class Main {
         System.out.print("----\n");
 
         // Ej.9:
-        boolean diaFest = false;
+        boolean diaFest = true;
         if (diaFest) {
             System.out.print("Es festivo, yaaayyy!");
         } else {
@@ -256,6 +258,90 @@ public class Main {
             System.out.print ("Esta fuera del rango");
 
         };
+
+        System.out.print ("---\n");
+
+        // Ej.4: User & password:
+        String user = "admin";
+        String pass = "1234";
+
+        boolean userT = true;
+        boolean passT = true;
+
+        if ( userT && passT ){
+            System.out.print ("Acceso permitido");
+        } else {
+            System.out.print ("Acceso denied" + "\n");
+            System.out.println();;
+        }
+
+        System.out.println("---\n");
+
+
+        //Ej.5: Compra con descuento adiccional:
+
+        int Precio = 250;
+        boolean TarjClien = true;
+
+        if ( TarjClien = true & Precio > 200 ) {
+
+           double Desc = Precio * 0.05;
+            System.out.println(" el cliente tiene un descuento de " + Desc);
+        } else {
+            System.out.println(" el cliente no tiene descuento");
+        }
+
+        //Ej.6: Categoria de edad:
+        int Edad = 8;
+
+        if(Edad < 12){
+            System.out.println("Si es menor de 12, es un niño");
+        } if(Edad< 17 && Edad > 12) {
+            System.out.println("Adolescente");
+
+        } if (Edad>18 && Edad < 64){
+            System.out.println("Adulto");
+        } if(Edad > 64){
+            System.out.println("adulto mayor");
+        };
+
+// Ej.7: Validar numero par y multiplo de 5:
+        int numE = 4;
+
+
+        if(numE % 2 ==0  && numE %5 ==0){
+            System.out.println("Es divisible");
+        } else {
+            System.out.println("No es divisible" + "\n");
+
+        };
+
+        //Ej.8: Contraseña segura:
+        String SecurePass = "@123E22222222";
+
+
+        if( SecurePass.length() >= 8 && SecurePass.contains("@")){
+            System.out.println("Contraseña segura");
+        } else {
+            System.out.println("Contraseña insegura");
+        }
+
+        //Ej.9: Evaluar 2 numeros:
+        int numEn = 21;
+        int numEn2 = -4;
+        if(numEn >= 0 && numEn2 >= 0){
+            System.out.println("ambos positivos");
+        }  else if (numEn <0 && numEn2 <0) {
+            System.out.println("ambos negativos");
+
+        } else  {
+            System.out.println("Son diferentes");
+        };
+
+        //Ej.10: Operador ternario:
+        int myAge = 2;
+        String msg = (myAge >= 18 ) ? "mayor de edad" : "menor de edad";
+        System.out.println(msg);
 
     };
 
